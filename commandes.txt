@@ -1,0 +1,18 @@
+    1  docker --version
+    2  docker ps
+    3  docker --version
+    4  mkdir docker-flask-app
+    5  cd docker-flask-app
+    7  nano Dockerfile
+    8  nano app.py
+    9  nano requirements.txt
+   10  docker build -t angelique-flask-app 
+   11  docker build -t angelique-flask-app .
+   12  docker images
+   13  docker run -p 5000:5000 angelique-flask-app
+   14  docker run -d -p 5000:5000 angelique-flask-app
+   15  docker ps
+   16  docker login 
+   17  docker tag angelique-flask-app angel492/angelique-flask-app
+   18  docker push angel492/angelique-flask-app
+   19  history | grep "docker\|nano\|python"> commandes.txt
